@@ -1,0 +1,13 @@
+.banner{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/spotylflm.appspot.com/o/en-US._UR1920%2C1080_%20(1).jpg?alt=media&token=7760ab9a-5f9f-445c-9ccf-d438de484ec7');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30%;
+}
+
+.imagen{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/spotylflm.appspot.com/o/coldplay-argentina-river.webp?alt=media&token=da89d606-1cfe-4eef-9faa-163a13d50b20');
+    background-size: cover;
+    padding: 30%;
+}

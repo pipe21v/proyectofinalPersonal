@@ -7,6 +7,7 @@ import { Integrantes } from "../Integrantes/Integrantes"
 import { Albumes } from "../Albumes/Albumes"
 import { Music } from "../Music/Music"
 import { Mercancia } from "../Mercancia/Mercancia"
+import { Ampliarinfo } from "../Ampliarinfo/Ampliarinfo"
 
 export function Rutas(){
     return (
@@ -19,6 +20,7 @@ export function Rutas(){
             <Route path="/albumes" element={<Albumes />} />
             <Route path="/music" element={<Music />} />
             <Route path="/mercancias" element={<Mercancia />} />
+            <Route path="/tienda" element={<Ampliarinfo />} />
             </Routes>
         </>
         

@@ -14,15 +14,15 @@ export function Rutas(){
         <>
             <Menu/>
             <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/historia" element={<Historia />} />
-            <Route path="/integrantes" element={<Integrantes />} />
-            <Route path="/albumes" element={<Albumes />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/mercancias" element={<Mercancia />} />
-            <Route path="/tienda" element={<Ampliarinfo />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/historia" element={<Historia />} />
+                <Route path="/integrantes" element={<Integrantes />} />
+                <Route path="/albumes" element={<Albumes />} />
+                <Route path="/music" element={<Music />} />
+                <Route path="/mercancias" element={<Mercancia />} />
+                <Route path="/tienda" element={<Ampliarinfo />} />
             </Routes>
         </>
-        
+
       )
 }

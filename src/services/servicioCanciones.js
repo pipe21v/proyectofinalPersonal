@@ -12,7 +12,7 @@ export async function servicioCancionesTop(){
     // SE CREA LA CONSTANTE PETICION (REQUEST)
     const REQUEST={
         method:"GET",
-        headers:{Authorization:"Bearer BQDc6hs9BEFG05DDHrSHcCwgiyX_MMg9EgWNIgT_DV9ga7sV_d6CS7eHuzKs49lE27HHrGQUXnSPC_-aqJLFqwJsvogZyz9QVHuCGfbMmxDPVyZZkiV3GlcLJ_aEuwIrlqcEbVzoOXejFKpE8V5Jd68bWOaFz73iEPRx0ug"}
+        headers:{Authorization:"Bearer BQBftkOQPCpoDJRVXukD65x-GolhOrXCNUMcr1-VOyjO0qTvuVcwz9Y4MHa0X1-kKtOeLbaELna6LEdvoFUg7Qrfdy4Z-4LAMV0pbBhmYiIP_dnSDDJGf3hRPimnhsnpmt9G5rA_LgX37snD09IBjjURo4SfATzEsoDRa6s"}
     }
 
     //3.NOS VAMOS PARA EL RESTAURANTE
@@ -20,5 +20,5 @@ export async function servicioCancionesTop(){
     let respuesta=await fetch(URL,REQUEST)
     let canciones=await respuesta.json()
 
-    console.log(canciones)
+    return(canciones)
 }

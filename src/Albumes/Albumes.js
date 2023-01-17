@@ -4,11 +4,11 @@ import { Footer } from "../shared/Footer/Footer"
 import { useState,useEffect } from "react"
 
 export function Albumes (){
-    //usando el hook usestate para almacenar la respuesta del api de forma global
+    
     const[albumes,setAlbumes]=useState(null)
     const[estadoCarga,setEstadoCarga]=useState(true)
 
-    //usando el hook useeffect para limitar el consumo del api a una sola vez
+    
     useEffect(function(){
 
         servicioAlbumesTop().then(function(respuesta){
@@ -17,7 +17,7 @@ export function Albumes (){
             })
     },[])
 
-    // render del componente:
+    
     if(estadoCarga==true){
 
         return(
@@ -40,7 +40,7 @@ export function Albumes (){
                                 <div key={id}>
                                     <div className="col">
                                         <div className="card h-100 shadow">
-                                                <img src={albumes.album.images[0].url} alt="foto" className="h-100 img-fluid w-100"></img>
+                                                <img src={albumes.discography.images[0].url} alt="foto" className="h-100 img-fluid w-100"></img>
                                                 <h4 className="text-center titulo">{album.name}</h4>
                                                 
                                                 

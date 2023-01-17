@@ -12,7 +12,7 @@ export async function servicioCancionesTop(){
     // SE CREA LA CONSTANTE PETICION (REQUEST)
     const REQUEST={
         method:"GET",
-        headers:{Authorization:"Bearer BQBftkOQPCpoDJRVXukD65x-GolhOrXCNUMcr1-VOyjO0qTvuVcwz9Y4MHa0X1-kKtOeLbaELna6LEdvoFUg7Qrfdy4Z-4LAMV0pbBhmYiIP_dnSDDJGf3hRPimnhsnpmt9G5rA_LgX37snD09IBjjURo4SfATzEsoDRa6s"}
+        headers:{Authorization:"Bearer BQCnDHXubgAVWbU4uaCYSz07Y6P8R6DQ1OyeyzP81JfJMqNMzApCZkX0doymw95rsM6TwKOtBrq2zicZEx8Ce0UM7IUsvulVS_8QgjJ-WazmBrQUmah3zpJHldARrNIk75lgcdZ6q4LoFSrVUpEgnwIToW7CxAHgmpWiqM0"}
     }
 
     //3.NOS VAMOS PARA EL RESTAURANTE

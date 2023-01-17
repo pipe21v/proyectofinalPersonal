@@ -1,4 +1,6 @@
+import './Music.css'
 import { servicioCancionesTop } from "../services/servicioCanciones"
+import { Footer } from "../shared/Footer/Footer"
 import { useState,useEffect } from "react"
 
 export function Music (){
@@ -28,7 +30,7 @@ export function Music (){
 
         return(
             <>
-                <h2 className="text-center">canciones de la banda: </h2>
+                <h1 className="text-center titulo p-5">Canciones de la banda </h1>
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-5 g-5">
 
@@ -36,11 +38,12 @@ export function Music (){
                         canciones.tracks.map(function(cancion,id){
                             return(
                                 <div key={id}>
-                                    <div className="col">
-                                        <div className="card h-100 shadow">
+                                    <div className="col my-4">
+                                        <div className="card h-100 w-100 shadow">
                                                 <img src={cancion.album.images[0].url} alt="foto" className="h-100 img-fluid w-100"></img>
-                                                <h1 className="text-center">{cancion.name}</h1>
-                                                <audio controls src={cancion.preview_url}></audio>
+                                                <h6 className="text-center titulo">{cancion.name}</h6>
+                                                <audio controls src={cancion.preview_url} className="w-100 p-2"></audio>
+                                                <h6 className="text-center text-info">Popularidad: {cancion.popularity}</h6>
                                                 
                                         </div>
                                     </div>
@@ -53,6 +56,7 @@ export function Music (){
                     </div>
 
                 </div>
+                <Footer/>
                 
             </>
         )

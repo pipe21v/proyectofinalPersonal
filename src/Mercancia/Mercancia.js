@@ -1,3 +1,4 @@
+import './Mercancia.css'
 import { Footer } from "../shared/Footer/Footer"
 import { useNavigate } from "react-router-dom"
 
@@ -57,26 +58,26 @@ export function Mercancia(){
 
     return(
         <>
-            <h1 className="text-center">{titulo}</h1>
+            <h1 className="text-center titulo p-5">{titulo}</h1>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-3 g-5">
 
                     {
                         productos.map(function(producto,id){
                             return(
-                                <div key={id}>
-                                    <div className="col">
+                                <div className='container' key={id}>
+                                    <div className="col-12 my-4">
                                         <div className="card h-100 shadow">
 
                                             
 
                                             <img src={producto.foto} alt="foto" className="h-100 img-fluid w-100"/>
-                                            <h4 className="text-center">{producto.nombre}</h4>
+                                            <h5 className="text-center titulo">{producto.nombre}</h5>
                                             <h4 className="text-center">{producto.precio}</h4>
                     
 
 
-                                            <button className="btn btn-primary mx-3 my-3" onClick={
+                                            <button className="btn btn-info mx-3 my-3 text-light" onClick={
                                                 function(){
                                                     detectarEvento(producto)
                                                 }

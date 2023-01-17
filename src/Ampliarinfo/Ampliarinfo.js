@@ -1,4 +1,5 @@
 import './Ampliarinfo.css'
+import { Footer } from "../shared/Footer/Footer"
 import { useLocation } from "react-router-dom"
 export function Ampliarinfo(){
 
@@ -19,7 +20,7 @@ export function Ampliarinfo(){
                     </div>
                     <div className="col-12 col-md-4 border p-3">
                         <h2 className="fw-bold">{producto.nombre}</h2>
-                        <h1 className="mt-3 display-2">{producto.precio}<span className='descuento'>20% off</span></h1>
+                        <h1 className="mt-3 display-2">{producto.precio}<span className='descuento'>20% dto.</span></h1>
                         <br/>
                         <span class="badge text-light bg-info">Descuento del día</span>
                         <p>Hasta 48 cuotas</p>
@@ -42,6 +43,7 @@ export function Ampliarinfo(){
                 </div>
 
             </div>
+            <Footer/>
         </>
     )
 }
